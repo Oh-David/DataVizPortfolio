@@ -1,12 +1,13 @@
 import './App.css';
 import SmileyFace from './components/Smiley/SmileyFace';
 import MouseTracker from './components/MouseTracker/MouseTracker';
-import ScatterPlot from './components/ScatterPlot/ScatterPlot';
+import Colors from './components/colors/Colors';
+import PopulationBarChart from './components/PopulationBarChart/PopulationBarChart';
 
 const App = () => (
   <div>
     {/* <SmileyFace /> */}
-    <ScatterPlot />
+    <PopulationBarChart />
     {/* <graph /> */}
   </div>
   

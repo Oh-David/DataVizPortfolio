@@ -13,7 +13,7 @@ const pieArc = arc()
   .innerRadius(0)
   .outerRadius(width);
 
-const ScatterPlot = () => {
+const Colors  = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -47,6 +47,6 @@ const ScatterPlot = () => {
   );
 };
 
-export default ScatterPlot;
+export default Colors;
 // const rootElement = document.getElementById('root');
 // reactDom.render(<scatterPlot />, rootElement);
