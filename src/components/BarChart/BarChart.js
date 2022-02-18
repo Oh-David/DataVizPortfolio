@@ -8,7 +8,7 @@ const width = 1880;
 const height = 800;
 const margin = { top: 20, right: 20, bottom: 20, left: 200 };
 
-const PopulationBarChart  = () => {
+const useData = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -20,6 +20,12 @@ const PopulationBarChart  = () => {
       setData(data.slice(0, 10));
     });
   }, []);
+
+  return data;
+}
+
+const PopulationBarChart  = () => {
+  const data = useData();
 
   if (!data) {
     return <pre>Loading ... </pre>
